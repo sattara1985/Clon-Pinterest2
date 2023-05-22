@@ -59,13 +59,13 @@
 .nav > li:nth-child(6):hover{
     color: red;
 }
-.search{   
+.finder{   
     width: 70%;
     position: relative;
     padding: 1%;
     
 }
-.search > input{
+.finder > input{
     
     border: 0;
     width: 100%;
@@ -76,7 +76,7 @@
     background-color: rgba(128, 128, 128, 0.212);
     
 }
-.search > input:hover{
+.finder > input:hover{
     
     border: 0;
     width: 100%;
@@ -87,30 +87,18 @@
     background-color:rgb(234, 227, 227);
     
 }
-.search > input:focus{
+.finder > input:focus{
     outline: none;
 }
 
 
-.notification i{
-    background-color: #fffff8;
-    font-size: 20px;
-    color: gray;
-    margin-top: 5px;
-
-}
-.notification i:hover{
-    color: rgba(0, 17, 255, 0.733);
-}
-
-
-.profile img{
+.profile-img img{
     object-fit: cover;
     border-radius: 50%;
 }
 
 
-.container{
+.content{
     padding-top: 8%;
     width: 100%;
     display: grid;
@@ -121,16 +109,14 @@
 
 
 }
-.container > div{
+.content > div{
     padding: 0;
     margin: 15px 10px;
     border-radius: 20px;
 
 }
-.card > iframe{
-    border-radius:25px ;
-}
-.container  img{
+
+.content  img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -148,10 +134,10 @@
 
 
 @media all and(min-width: 421px) and (max-width: 768px){
-    .container{
+    .content{
         grid-template-columns: repeat(auto-fill,200px);
     }
-    .search{
+    .finder{
         display: none;
     }
     .nav > li:nth-child(2){
@@ -162,10 +148,10 @@
 }
 
 @media all and (min-width:50px) and (max-width: 420px){
-    .container{
+    .content{
         grid-template-columns: repeat(auto-fill,150px);
     }
-    .container > div{
+    .content > div{
         padding: 0;
         margin: 8px 5px;
         border-radius: 20px;
@@ -174,8 +160,8 @@
     .nav{
         padding: 2%;
     }
-    .search > input{
-        /* display: none; */
+    .finder > input{
+     
         padding: 3%;
     }
     .nav > li>img{
@@ -199,7 +185,7 @@
         display: none;
         
     }
-    .card > iframe{
+    .card-image > iframe{
         border-radius:25px ;
     }
 
