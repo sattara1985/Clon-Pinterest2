@@ -125,11 +125,39 @@
 .card_small{
     grid-row-end: span 26;
 }
+.card_small:hover{
+    grid-row-end: span 26;
+    box-shadow: 5px 3px 20px;
+    cursor: pointer;
+
+}
 .card_medium{
     grid-row-end: span 33;
+  
+}
+.card_medium:hover{
+    grid-row-end: span 33;
+    box-shadow: 5px 3px 20px;
+    cursor: pointer;
 }
 .card_large{
     grid-row-end: span 40;
+}
+.card_large:hover{
+    grid-row-end: span 40;
+    box-shadow: 5px 3px 20px;
+    cursor: pointer;
+}
+
+.card-image a{
+    color: white;
+    background: var(--i);
+    background-size: cover;
+}
+.card_small a:hover{
+    color: black;
+    background: var(--i);
+    background-size: cover;
 }
 
 
